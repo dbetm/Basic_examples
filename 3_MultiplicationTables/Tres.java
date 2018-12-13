@@ -1,4 +1,4 @@
-public class Cuatro {
+public class Tres {
     public static void main(String args[]) {
         mostrarTablasMultiplicar();
     }
