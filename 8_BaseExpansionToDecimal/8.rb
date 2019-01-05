@@ -1,9 +1,9 @@
-def convertirADecimal(binario)
+def toDecimal(binary)
     num = 0
     j = 0
-    longitud = binario.length
-    (longitud - 1).downto(0) do |i|
-        if binario[i] == '1'
+    len = binary.length
+    (len - 1).downto(0) do |i|
+        if binary[i] == '1'
             num += 2 ** j
         end
         j += 1
@@ -14,4 +14,4 @@ end
 
 print "Escribe el número en binario: "
 binario = gets.chomp.to_s
-puts "El número es: #{convertirADecimal(binario)}"
+puts "El número es: #{toDecimal(binario)}"
