@@ -25,8 +25,10 @@ Si creamos una rama de seguimiento en GitHub, para traerla localmente hacemos:
 `$ git stash`
 -- Nos movemos a la rama donde vayamos a hacer algún cambio, ya que terminemos... 
 `$ git checkout rama-donde-estaba`
+
 `$ git stash list`  Listar cambios temporales en stack
-`$ git pop`  Nos regresa el estado actual de nuestro espacio de trabajo
+
+`$ git stash pop`  Nos regresa el estado actual de nuestro espacio de trabajo
 
 >> Advice: Nunca reescribas la historia sobre ramas que hayas publicado al remoto y sobre las que otros ya puedan estar trabajando.
 >> Rebase << Se utiliza para actualizar una rama con respecto a la principal u otra (similar a un merge). También permite reescribir la historia de commits...
